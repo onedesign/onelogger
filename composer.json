@@ -1,7 +1,7 @@
 {
-    "name": "onedesign/onelogger",
+    "name": "onedesign/craft-onelogger",
     "description": "A Craft CMS plugin for logging to STDOUT",
-    "homepage": "https://github.com/onedesign/onelogger",
+    "homepage": "https://github.com/onedesign/craft-onelogger",
     "type": "craft-plugin",
     "keywords": ["craft","plugin"],
     "license": "MIT",
