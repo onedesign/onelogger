@@ -29,9 +29,9 @@ Add One Logger to your `composer.json` file:
 }
 ```
 
-Then run `composer install`. Go to the Craft Control Panel to install and configure.
+Then run `composer install` or `composer update` if you already have. Go to the Craft Control Panel to install.
 
-You'll probably also want to add the resuling directory, `craft/plugins/onelogger`, to your .gitignore:
+You'll probably also want to add the resuling directory, `craft/plugins/onelogger`, to your .gitignore.
 
 ### Manually
 
