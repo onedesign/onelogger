@@ -19,12 +19,12 @@ Add One Logger to your `composer.json` file:
     "repositories": [
         {
             "type": "git",
-            "url": "git@github.com:onedesign/craft-onelogger.git"
+            "url": "git@github.com:onedesign/onelogger.git"
         }
     ],
 
     "require": {
-        "onedesign/craft-onelogger": "1.0",
+        "onedesign/onelogger": "1.0",
     }
 }
 ```
