@@ -17,14 +17,14 @@ Add One Logger to your `composer.json` file:
 ```
 {
     "repositories": [
-        {
-            "type": "git",
-            "url": "git@github.com:onedesign/onelogger.git"
-        }
+      {
+        "type": "vcs",
+        "url": "https://github.com/onedesign/onelogger"
+      }
     ],
 
     "require": {
-        "onedesign/onelogger": "1.0",
+        "onedesign/onelogger": "^1.0",
     }
 }
 ```
