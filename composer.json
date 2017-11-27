@@ -1,7 +1,7 @@
 {
     "name": "onedesign/onelogger",
     "description": "A Craft CMS plugin for logging to STDOUT",
-    "homepage": "https://github.com/onedesign/craft-onelogger",
+    "homepage": "https://github.com/onedesign/onelogger",
     "type": "craft-plugin",
     "keywords": ["craft","plugin"],
     "license": "MIT",
@@ -11,6 +11,6 @@
         "homepage": "https://onedesigncompany.com"
     }],
     "require": {
-        "composer/installers": "~1.0"
+        "composer/installers": "~1.4"
     }
 }
