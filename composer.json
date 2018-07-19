@@ -1,16 +1,40 @@
 {
     "name": "onedesign/onelogger",
-    "description": "A Craft CMS plugin for logging to STDOUT",
-    "homepage": "https://github.com/onedesign/onelogger",
+    "description": "Logging Alternative for Craft CMS 3.x using STDOUT and STDERR",
     "type": "craft-plugin",
-    "keywords": ["craft","plugin"],
+    "version": "2.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "onelogger"
+    ],
+    "support": {
+        "docs": "https://github.com/onedesign/onelogger/blob/master/README.md",
+        "issues": "https://github.com/onedesign/onelogger/issues"
+    },
     "license": "MIT",
-    "authors": [{
-        "name": "One Design Company",
-        "email": "dev+onelogger@onedesigncompany.com",
-        "homepage": "https://onedesigncompany.com"
-    }],
+    "authors": [
+        {
+            "name": "One Design Company",
+            "homepage": "https://onedesigncompany.com"
+        }
+    ],
     "require": {
-        "composer/installers": "~1.4"
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "onedesign\\onelogger\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "onelogger",
+        "handle": "onelogger",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/onedesign/onelogger/master/CHANGELOG.md",
+        "class": "onedesign\\onelogger\\OneLogger"
     }
 }
