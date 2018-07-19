@@ -38,7 +38,7 @@ To install the plugin, follow these instructions.
     ],
 
     "require": {
-        "onedesign/onelogger": "^1.0",
+        "onedesign/onelogger": "^2.0",
     }
 }
 ```

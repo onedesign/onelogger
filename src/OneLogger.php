@@ -67,8 +67,7 @@ class OneLogger extends Plugin
     */
 
     $streamTarget = new \onedesign\onelogger\StreamTarget([
-       'logFile' => __DIR__ . '/pluginName.log',
-       'categories' => ['onelogger']
+      'categories' => ['onelogger']
     ]);
 
     // include the new target to the dispatcher
