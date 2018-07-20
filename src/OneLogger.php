@@ -55,21 +55,9 @@ class OneLogger extends Plugin
     parent::init();
     self::$plugin = $this;
 
-    /*
-    Event::on(
-      Plugins::class,
-      Plugins::EVENT_AFTER_INSTALL_PLUGIN,
-      function (PluginEvent $event) {
-        if ($event->plugin === $this) {
-        }
-      }
-    );
-    */
-
+    // Creates a stream target that writes to php://stderr
     $streamTarget = new \onedesign\onelogger\StreamTarget();
-    $streamTarget->setLevels(['warning','error']); // All logs
-
-    // include the new target to the dispatcher
+    $streamTarget->setLevels(['warning','error','info','profile','trace']); // All logs
     Craft::getLogger()->dispatcher->targets[] = $streamTarget;
 
     Craft::info(
