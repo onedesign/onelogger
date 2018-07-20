@@ -57,7 +57,7 @@ class OneLogger extends Plugin
 
     // Creates a stream target that writes to php://stderr
     $streamTarget = new \onedesign\onelogger\StreamTarget();
-    $streamTarget->setLevels(['warning','error','info','profile','trace']); // All logs
+    $streamTarget->setLevels($this->settings->logLevels);
     Craft::getLogger()->dispatcher->targets[] = $streamTarget;
 
     Craft::info(
@@ -73,4 +73,8 @@ class OneLogger extends Plugin
   // Protected Methods
   // =========================================================================
 
+  protected function createSettingsModel()
+  {
+    return new \onedesign\onelogger\models\Settings();
+  }
 }

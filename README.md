@@ -46,6 +46,28 @@ To install the plugin, follow these instructions.
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for onelogger.
 
+
+## Configuration
+
+You can configure the log levels that show up in the stderr logs by adding a `onelogger.php` config file (and an ENV var).
+
+`config/onelogger.php`
+```
+<?php
+
+return [
+  'logLevels' => getenv('ONELOGGER_LOG_LEVELS') ? explode(',', getenv('ONELOGGER_LOG_LEVELS')) : ['warning', 'error']
+];
+
+```
+
+`.env`
+```
+# Set which Craft log levels you want to see in stderr
+ONELOGGER_LOG_LEVELS="warning,error,info,trace,profile"
+```
+
+
 ## Usage
 
 Log events in Craft as you normally would (eg `Craft::log('Uh oh! Error!', LogLevel::Error)` or `MyPlugin::log(...)`), and you'll see the logs in STDOUT.
