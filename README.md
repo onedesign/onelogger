@@ -1,22 +1,8 @@
 # onelogger plugin for Craft CMS 3.x
 
-An alternative logger for Craft CMS, including STDOUT.
+This plugin writes logs to `php://stderr` for Heroku hosting.
 
-Looking for Craft 2 Support? [OneLogger for Craft 2](https://github.com/onedesign/onelogger/tree/v1)
-
-## Why?
-
-This is primarily useful Craft sites hosted on Heroku, which uses STDOUT/STDERR for logging.
-
-## Requirements
-
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
-
-# onelogger plugin for Craft CMS 3.x
-
-Logging Alternative for Craft CMS 3.x using STDOUT and STDERR
-
-![Screenshot](resources/img/plugin-logo.png)
+**Looking for Craft 2 Support?** [OneLogger for Craft 2](https://github.com/onedesign/onelogger/tree/v1)
 
 ## Requirements
 
