@@ -1,10 +1,14 @@
-# One Logger
+# onelogger plugin for Craft CMS 3.x
 
 An alternative logger for Craft CMS, including STDOUT.
 
 ## Why?
 
-This is primarily useful Craft sites hosted on Heroku, which uses STDOUT for logging.
+This is primarily useful Craft sites hosted on Heroku, which uses STDOUT/STDERR for logging.
+
+## Requirements
+
+This plugin requires Craft CMS 3.0.0-beta.23 or later.
 
 ## Installation
 
