@@ -66,9 +66,8 @@ class OneLogger extends Plugin
     );
     */
 
-    $streamTarget = new \onedesign\onelogger\StreamTarget([
-      'categories' => ['onelogger']
-    ]);
+    $streamTarget = new \onedesign\onelogger\StreamTarget();
+    $streamTarget->setLevels(['warning','error']); // All logs
 
     // include the new target to the dispatcher
     Craft::getLogger()->dispatcher->targets[] = $streamTarget;
