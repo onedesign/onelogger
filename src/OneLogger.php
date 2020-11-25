@@ -56,7 +56,7 @@ class OneLogger extends Plugin
     self::$plugin = $this;
 
     // Creates a stream target that writes to php://stderr
-    $streamTarget = new \onedesign\onelogger\StreamTarget();
+    $streamTarget = new \onedesign\onelogger\log\StreamTarget();
     $streamTarget->setLevels($this->settings->logLevels);
     Craft::getLogger()->dispatcher->targets[] = $streamTarget;
 
