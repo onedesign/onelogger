@@ -42,7 +42,7 @@ class OneLogger extends Plugin
   /**
    * @var string
    */
-  public $schemaVersion = '2.0.0';
+  public $schemaVersion = '2.0.1';
 
   // Public Methods
   // =========================================================================
