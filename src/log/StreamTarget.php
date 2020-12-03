@@ -1,5 +1,5 @@
 <?php
-namespace onedesign\onelogger;
+namespace onedesign\onelogger\log;
 
 use yii\log\Logger;
 use yii\log\Target;
